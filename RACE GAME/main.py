@@ -3,10 +3,10 @@ import turtle as t
 
 race_on = True
 
-screen = t.Screen()
+screen_mode = t.Screen()
 
-screen.setup(width=800, height=500)
-user_bet = screen.textinput(title="Make your bet", prompt='What turtle will win the race?'
+screen_mode.setup(width=800, height=500)
+user_bet = screen_mode.textinput(title="Make your bet", prompt='What turtle will win the race?'
                                                           'Enter color:\n')
 
 y_cordinates = [-100, -60, -20, 20, 50]
@@ -36,4 +36,4 @@ while race_on:
         random_forward = random.randint(0, 10)
         turtle.forward(random_forward)
 
-screen.exitonclick()
+screen_mode.exitonclick()
